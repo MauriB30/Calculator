@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background-color: #8d8d8d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.delete {
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+
+.idTask {
+    margin-left: 30px;
+    flex-grow: 1;
+}
+
+.idStatus {
+    margin-right: 150px;
+}
+
+#completedContainer .idStatus {
+    margin-right: 80px;
+}
+
+.headerList {
+    margin-bottom: 10px;
+    display: flex;  
+    padding: 10px;
+    border-bottom: solid;
+}
+
+#container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 50px;
+}
+
+
+#listContainer {
+    visibility: hidden;
+    width: 40%;
+    border: solid;
+    height: fit-content;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 17px;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 25px;
+    padding-left: 15px;
+}
+
+.task{
+    margin-left: 40px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.taskStatus {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+#completedContainer {
+    visibility: hidden;
+    width: 40%;
+    border-bottom: solid;
+    height: min-content;
+    border: solid;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 17px;
+}
+
+
+#addContainer {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#deleteContainer {
+    display: none;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    gap: 450px;
+    width: 40%;
+    position: relative;
+    bottom: -40px;
+    left: 10px;
+}
+
+#inputTask {
+    margin-right: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+#inputTask:focus {
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#inputTask:focus::placeholder {
+    transform: translateX(50px);
+}
+
+#add {
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#deleteAll,#deleteCompleted,#clearCompleted {
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid  2px;
+    font-size: 16px;
+}
+
+#deleteAll:active,#deleteCompleted:active {
+    outline: 1px solid;
+}
+
+.checkboxTask {
+    position: relative;
+    left: 15px;
+    margin: 0;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: inset 2px rgb(61, 60, 60);
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    background-color: white;
+    border-radius: 4px;
+}
+
+.checkboxTask:checked {
+    background-color: rgb(74, 187, 162);
+}
+
+#clearCompleted {
+    position: relative;
+    bottom: 85px;
+}
+
