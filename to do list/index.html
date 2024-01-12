@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/proyectos/todo/todo.css">
+</head>
+<body>
+    <h1>TO DO LIST</h1>
+    <div id="addContainer">
+        <input type="text" name="" id="inputTask" placeholder="New task">
+        <button id="add">Add task</button>
+    </div>
+    <div id="deleteContainer">
+        <button id="deleteAll">Clear list</button>
+        <button id="deleteCompleted">Delete Completed</button>
+    </div>
+    <div id="container">
+        <div id="listContainer">
+            <h3>Task List</h3>
+            <div class="headerList">
+                <div class="idHeader">ID</div>
+                <div class="idTask">TASK</div>
+                <div class="idStatus">STATUS</div>
+            </div>
+        </div>
+        <div id="completedContainer">
+            <h3>Completed tasks</h3>
+            <div class="headerList">
+                <div class="idHeader">ID</div>
+                <div class="idTask">TASK</div>
+                <div class="idStatus">STATUS</div>
+                <button id="clearCompleted">Clear List</button>
+            </div>
+        </div>
+    </div>
+    <script src="/proyectos/todo/todo.js"></script>
+</body>
+</html>
+
