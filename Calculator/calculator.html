@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="/proyectos/todo/todo.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
 </head>
 <body>
-    <h1>TO DO LIST</h1>
-    <div id="addContainer">
-        <input type="text" name="" id="inputTask" placeholder="New task">
-        <button id="add">Add task</button>
-    </div>
-    <div id="deleteContainer">
-        <button id="deleteAll">Clear list</button>
-        <button id="deleteCompleted">Delete Completed</button>
-    </div>
-    <div id="container">
-        <div id="listContainer">
-            <h3>Task List</h3>
-            <div class="headerList">
-                <div class="idHeader">ID</div>
-                <div class="idTask">TASK</div>
-                <div class="idStatus">STATUS</div>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <div class="operation"></div>
+                <div class="result">0</div>
             </div>
-        </div>
-        <div id="completedContainer">
-            <h3>Completed tasks</h3>
-            <div class="headerList">
-                <div class="idHeader">ID</div>
-                <div class="idTask">TASK</div>
-                <div class="idStatus">STATUS</div>
-                <button id="clearCompleted">Clear List</button>
-            </div>
+            <button class="clear-all">C</button>
+            <button class="clear-entry">CE</button>
+            <button class="operator">/</button>
+            <button class="operator">x</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">-</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">+</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="equal">=</button>
+            <button class="zero number">0</button>
+            <button class="operator">.</button>
         </div>
     </div>
-    <script src="/proyectos/todo/todo.js"></script>
 </body>
 </html>
-
