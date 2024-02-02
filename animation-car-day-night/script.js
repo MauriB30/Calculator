@@ -1,8 +1,8 @@
-let changeBackground = document.querySelector("#swicht");
-let background = document.querySelector("#background");
-let day = true;
-let toggle = document.querySelector("#toggle-btn");
-let imgCar = document.querySelector("#img-car");
+const changeBackground = document.querySelector("#swicht");
+const background = document.querySelector("#background");
+const day = true;
+const toggle = document.querySelector("#toggle-btn");
+const imgCar = document.querySelector("#img-car");
 
 toggle.addEventListener("click", () => {
     toggle.classList.toggle("active");
