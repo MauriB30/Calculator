@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(122, 89, 73);
+}
+
+#background {
+    width: 70vw;
+    height:80vh;
+    background-image: url('/assets/Sunrise.jpg');
+    background-size: cover;
+    position: relative;
+    margin: 80px auto;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+#street {
+    background-image: url('/assets/Img_02.png');
+    position: absolute;
+    width: 500%;
+    height: 150px;
+    bottom: 0;
+    left: 0%;
+    animation: move 7s linear infinite;
+}
+
+#car {
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+    animation: suspension 2s linear infinite;
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(-3000px);
+    }
+}
+
+@keyframes suspension {
+    100% {
+        transform: translateY(-2px)
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    0% {
+        transform: translateY(-2px);
+    }
+}
+
+
+#toggle {
+    display: block;
+    position: relative;
+    border: 2px solid #ffffff5b;
+    padding: 3px;
+    width: 60px;
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    box-shadow: 2px 2px rgb(90, 88, 88);
+    cursor: pointer;  
+}
+
+#toggle-btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffffff9d;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
+    background-color: transparent;
+    box-shadow: 1px 1px  rgb(90, 88, 88);
+    cursor: pointer;
+}
+
+#toggle-btn.active {
+    transform: translateX(34px);
+}
+
+
