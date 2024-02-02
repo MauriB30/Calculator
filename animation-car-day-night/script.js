@@ -1,6 +1,6 @@
 const changeBackground = document.querySelector("#swicht");
 const background = document.querySelector("#background");
-const day = true;
+let day = true;
 const toggle = document.querySelector("#toggle-btn");
 const imgCar = document.querySelector("#img-car");
 
